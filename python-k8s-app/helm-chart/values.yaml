@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: python-k8s-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+
+ingress:
+  enabled: false
